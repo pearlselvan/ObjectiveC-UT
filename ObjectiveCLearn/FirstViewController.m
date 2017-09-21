@@ -37,6 +37,9 @@
     NSLog(@"Version is 11");
 }
 
+-(int) num1:(int) param1  num2:(int) param2 {
+    return param1+param2;
+}
 
 /*
 #pragma mark - Navigation

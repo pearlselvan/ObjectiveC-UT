@@ -15,4 +15,6 @@
 
 - (NSString *) sayHello:(NSString*) myname;
 
+-(int) num1:(int) param1  num2:(int) param2;
+
 @end

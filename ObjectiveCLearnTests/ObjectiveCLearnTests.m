@@ -23,7 +23,7 @@
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
     self.fstvc = [[FirstViewController alloc] init];
-    self.cusinit = [[CustomInit alloc] init]; // This will print stmt in custome init methond
+    
 }
 
 - (void)tearDown {
@@ -51,6 +51,17 @@
 }
 
 -(void) testCustominit {
+    self.cusinit = [[CustomInit alloc] init]; // This will print stmt in custome init methond
+    
+}
+
+-(void) testmultipleparameter {
+    // NSString *firstlast = [ helper firstname:@"selvan" lastname:@"sr"];
+//    NSLog(@"first and last name %@ ",firstlast);
+    int sum = [ self.fstvc num1:100 num2:20];
+    NSLog(@"Sum %i",sum);
+    XCTAssertTrue(3==3,@"Euqal");
+    XCTAssertTrue(30==sum,@"Equal Check");
     
 }
 

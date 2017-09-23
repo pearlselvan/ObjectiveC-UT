@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "FirstViewController.h"
 #import "CustomInit.h"
+#import <OCMock/OCMock.h>
 
 @interface ObjectiveCLearnTests : XCTestCase
 
@@ -52,6 +53,14 @@
 
 -(void) testCustominit {
     self.cusinit = [[CustomInit alloc] init]; // This will print stmt in custome init methond
+    
+}
+
+
+-(void) testMockLogin{
+//    id mockConnection = OCMClassMock([FirstViewController class]);
+//    fstvc.name=mockConnection;
+    
     
 }
 

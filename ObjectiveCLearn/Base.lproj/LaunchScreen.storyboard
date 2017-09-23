@@ -19,30 +19,12 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5PJ-V1-fef">
-                                <rect key="frame" x="132" y="318.5" width="111" height="30"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jzZ-Zk-zEv">
-                                        <rect key="frame" x="0.0" y="0.0" width="111" height="30"/>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="111" id="gm5-l8-daY"/>
-                                    <constraint firstAttribute="height" constant="30" id="vzi-We-5Ty"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="5PJ-V1-fef" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="BKI-wX-MHW"/>
-                            <constraint firstItem="5PJ-V1-fef" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Sy3-CT-0ad"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="474" y="-69"/>
+            <point key="canvasLocation" x="-1236" y="-98"/>
         </scene>
     </scenes>
 </document>

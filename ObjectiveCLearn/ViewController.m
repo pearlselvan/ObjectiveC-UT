@@ -63,6 +63,9 @@
     NSLog(@"check :  %d" ,self.check);
 //    NSLog(@"My grade %@",[self.getName @"muthu"]);
     
+    NSString *myname = [self getName:@"muthu"];
+
+    
     
     UIAlertController * alert = [UIAlertController
                                  alertControllerWithTitle:@"welcome"

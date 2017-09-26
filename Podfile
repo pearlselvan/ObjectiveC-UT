@@ -15,9 +15,15 @@ source 'https://github.com/Artsy/Specs.git'
 
 target 'ObjectiveCLearn' do
 	use_frameworks!
+	pod 'OCMock', '~> 3.4'	
+end
+
+target 'ObjectiveCLearnTests' do
+	use_frameworks!
 	pod 'OCMock', '~> 3.4'
 	
 end
+
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|

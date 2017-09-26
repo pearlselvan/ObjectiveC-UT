@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view.
 }
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -27,6 +28,34 @@
 - (NSString *) sayHello:(NSString*) myname {
     NSLog(@"Welcome : Hello %@ ",myname);
     return myname;
+}
+
+-(void) blockarray {
+    NSArray *my = @[@"data",@"data2"];
+    [my enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        NSLog(@"print block %lu index : value");
+        NSLog(@"Array iteration using block index - [%lu] values - %@",idx,obj);
+    }];
+    
+}
+
++(void) showme:(NSString*) myname  {
+    //    NSLog(@"Alert message showing %@", alertmessage);
+    NSString *alertTitle = @"Hello";
+    NSString *alertMessage = @"Welcome muthu";
+    UIAlertView *anAlert = [[UIAlertView alloc] initWithTitle:alertTitle message:alertMessage delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    [anAlert show];
+}
+
+
+-(void) blockcall {
+    //What is happending ?
+    void(^muthublock)(id,NSUInteger,BOOL*) = ^(id obj,NSUInteger idx,BOOL *stop) {
+        NSLog(@"block example %@" ,(NSString*) obj);
+    };
+    
+    BOOL stop;
+    muthublock(@"muthu block passed",0,&stop);
 }
 
 

@@ -17,4 +17,12 @@
 
 -(int) num1:(int) param1  num2:(int) param2;
 
+-(void) blockarray;
+
+-(void) blockcall;
+
+-(NSString*) getName:(NSString*) myname ;
+
++(void) showme:(NSString*) alertmessage;
+
 @end

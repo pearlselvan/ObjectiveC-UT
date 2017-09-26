@@ -7,9 +7,12 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "FirstViewController.h"
-#import "CustomInit.h"
 #import <OCMock/OCMock.h>
+#import "FirstViewController.h"
+#import "ParentOverride.h"
+
+#import "CustomInit.h"
+
 
 @interface ObjectiveCLearnTests : XCTestCase
 
@@ -57,6 +60,14 @@
 }
 
 
+//-(void) testOverrideMethond {
+//    
+//    ParentOverride *parent = [[ParentOverride alloc] init];
+//    NSLog(@"Parent Object \@",parent);
+//    
+//}
+
+
 -(void) testMockLogin{
 //    id mockConnection = OCMClassMock([FirstViewController class]);
 //    fstvc.name=mockConnection;
@@ -83,6 +94,15 @@
     }
     
     
+}
+
+-(void) testBlock {
+    [self.fstvc blockarray];
+}
+
+-(void) testBlockCall {
+    //what is happening  ?
+    [self.fstvc blockcall];
 }
 
 -(void) testArray {

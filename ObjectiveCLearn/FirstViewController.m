@@ -60,6 +60,7 @@
 
 
 - (NSString*) returnCode {
+    NSLog(@"Calling for swift header ");
     return @"CA-95054";
 }
 -(void) displayVersion  {

@@ -10,6 +10,7 @@
 #import <OCMock/OCMock.h>
 #import "FirstViewController.h"
 #import "ParentOverride.h"
+#import "ObjectiveCLearnTests-Bridging-Header.h"
 
 #import "CustomInit.h"
 
@@ -43,6 +44,7 @@
 
 -(void) testInstance {
     [self.fstvc displayVersion];
+    
 }
 
 -(void) testReturn {

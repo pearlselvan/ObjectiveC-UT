@@ -49,14 +49,25 @@
     NSLog(@"password :  %@" ,passenter);
     
     if ([userenter isEqualToString:@"m"] && [passenter isEqualToString:@"m"]) {
+        NSLog(@"Valid username");
+        [self showstatusScreen];
         returnvalue = YES;
+    } else {
+        NSLog(@"Invalid username");
     }
     
     
     return returnvalue;
 }
 
-
+-(void) showstatusScreen {
+    
+    NSLog(@"Showing status screen");
+    
+    self.status = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"ShowStatus"];
+    [self presentViewController:_status animated:YES completion:nil];
+    
+}
 
 - (IBAction)showsecvc:(id)sender {
     
@@ -90,6 +101,8 @@
     [alert addAction:noButton];
     
     [self presentViewController:alert animated:YES completion:nil];
+    
+    
     
     
 }

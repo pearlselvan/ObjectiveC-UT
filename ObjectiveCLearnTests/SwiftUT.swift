@@ -7,6 +7,8 @@
 //
 
 import XCTest
+import OCMock
+//#import <OCMock/OCMock.h>
 
 
 class SwiftUT: XCTestCase {
@@ -23,6 +25,7 @@ class SwiftUT: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+        
     }
     
     func testExample() {
@@ -33,7 +36,7 @@ class SwiftUT: XCTestCase {
     
     
     func testInstance() {
-        print (instance.returnCode())        
+        print (instance.returnCode())
     }
     
     func testReturn() {
@@ -43,6 +46,20 @@ class SwiftUT: XCTestCase {
     
     func testAddTwoNumbers() {
         print ("Adding Two  \(instance.num1(10, num2: 20))")
+    }
+    
+    func testMock() {
+            //ParentOverride *p = [ ParentOverride new];
+//        let p = ParentOverride()
+//        let appsMgrMock=OCMPartialMock(ParentOverride.init())
+//        OCMVeri
+        
+        
+        
+        
+        
+        
+        
     }
     
     func testCustomInit() {

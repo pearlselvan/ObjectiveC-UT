@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ShowStatus.h"
 @interface ViewController : UIViewController
+@property (nonatomic, strong) ShowStatus *status;
 @property (weak, nonatomic) IBOutlet UITextField *username;
 @property (weak, nonatomic) IBOutlet UITextField *password;
 -(BOOL) check;

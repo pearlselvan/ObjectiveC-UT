@@ -12,6 +12,8 @@
 #import "ParentOverride.h"
 #import "ObjectiveCLearnTests-Bridging-Header.h"
 
+
+
 #import "CustomInit.h"
 
 
@@ -40,6 +42,11 @@
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     
+}
+
+-(void) testMock {
+    ParentOverride *p = [ ParentOverride new];
+    id mk = OCMPartialMock(p);
 }
 
 -(void) testInstance {
